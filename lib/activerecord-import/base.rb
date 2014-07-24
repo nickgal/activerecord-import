@@ -10,7 +10,8 @@ module ActiveRecord::Import
     when 'mysqlspatial' then 'mysql'
     when 'mysql2spatial' then 'mysql2'
     when 'spatialite' then 'sqlite3'
-    when 'postgis' then 'postgresql'
+    when 'postgis', 'makara_postgresql'
+      'postgresql'
     else adapter
     end
   end
